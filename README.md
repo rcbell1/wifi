@@ -16,4 +16,4 @@ uv sync                                           # installs all dependencies
 
 # Where do I start?
 
-I recommend running the `examples/basic.py` script to begin. If you understand how this script works, you are ready to write your own.
+I recommend running the `examples/basic.py` script to begin. If you understand how this script works, you are ready to write your own. To run this script, use `uv run examples/basic.py`.
