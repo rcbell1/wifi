@@ -12,9 +12,9 @@ class MimoConfig:
 
 @dataclass
 class PhyConfig:
-    amendment: Amendment
-    modulation: Modulation
-    bandwidth: Bandwidth
-    preamble_type: Preamble
-    guard_interval_ns: int = 800  # e.g. 800ns or 400ns
+    amendment: Amendment = Amendment.N
+    modulation: Modulation = Modulation.BPSK
+    bandwidth: Bandwidth = Bandwidth.MHZ_20
+    preamble_type: Preamble = Preamble.LT
     mimo: MimoConfig = field(default_factory=MimoConfig)
+    guard_interval_ns: int = 800  # e.g. 800ns or 400ns

@@ -19,5 +19,5 @@ __all__ = [
 
 @dataclass
 class WifiConfig:
-    phy: PhyConfig = field(default_factory=PhyConfig)
+    phy: PhyConfig = field(default_factory=PhyConfig)  # type: ignore
     mac: MacConfig = field(default_factory=MacConfig)
