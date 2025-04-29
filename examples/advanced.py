@@ -12,6 +12,7 @@ from wifi.config import (
 )
 
 n_20mhz = WifiConfig(
+    amendment=Amendment.N,
     phy=PhyConfig(
         amendment=Amendment.N,
         modulation=Modulation.QAM16,  # max 64-QAM in 11n

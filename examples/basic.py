@@ -1,6 +1,6 @@
-from wifi import Transmitter, Receiver, Channel, Payload, WifiConfig
+from wifi import Transmitter, Receiver, Channel, Payload, WifiConfig, Amendment
 
-n_20mhz = WifiConfig()
+n_20mhz = WifiConfig(Amendment.N)  # uses typical default values for phy and mac
 
 tx = Transmitter(n_20mhz)
 chan = Channel(type="awgn", snr_db=20)
